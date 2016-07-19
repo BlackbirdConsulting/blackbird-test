@@ -1,0 +1,41 @@
+<?php
+/**
+ * Taxonomies
+ *
+ * This file registers any custom taxonomies
+ *
+ * @package      Core_Functionality
+ * @since        1.0.0
+ * @link         https://github.com/billerickson/Core-Functionality
+ * @author       Bill Erickson <bill@billerickson.net>
+ * @copyright    Copyright (c) 2011, Bill Erickson
+ * @license      http://opensource.org/licenses/gpl-2.0.php GNU Public License
+ */
+
+
+
+function bb_register_type_taxonomy(){
+	$labels = array(
+		'singular_label' => 'Project Type',
+		'label' => 'Project Type',
+		'menu_name' => 'Type',
+		'new_item_name' => 'New Type',
+		'update_item' => 'Update Type',
+		'edit_item' => 'Edit Type',
+		'search_items' => 'Search Type',
+		'all_items' => 'All Types'
+	);
+
+	register_taxonomy('project_type',array ('project'),
+		array (
+			'hierarchical' => false,
+			'labels' => $labels,
+			'show_ui' => true,
+			'query_var' => true,
+			'rewrite' => array('slug' => '')
+			
+		)
+	);
+}
+
+add_action('init', 'bb_register_type_taxonomy');

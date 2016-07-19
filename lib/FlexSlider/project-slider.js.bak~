@@ -1,0 +1,9 @@
+$(window).load(function(){
+      $('.flexslider2').flexslider({
+        maxItems: 1,
+        animation: "fade",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });

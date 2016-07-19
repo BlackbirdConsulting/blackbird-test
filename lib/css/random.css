@@ -1,0 +1,1257 @@
+/* Entry Content Reset
+------------------------------------------------------------*/ 
+.content-sidebar .entry-content, .archive .entry-content, .post-type-archive .entry-content {
+    margin:0;
+}
+
+.blog .entry-content {
+    border-bottom: 2px solid #CCBA3A;
+} 
+
+.clear {
+    clear:both;
+}
+
+.center-inline-element {
+    /*wrap a span around an inline block element with this class to center it*/
+    width:100%;
+    text-align:center;
+}
+
+/**
+ * Title Banner Area
+ *
+ * @author Jason Chafin
+ * 
+ *
+ */
+
+#title-area {
+
+}
+
+#title-area-mobile {
+    display:none;
+}
+
+#title-area-mobile #title-image {
+    min-width:80%;
+    margin: 0 auto;
+}
+
+#title-area-mobile #title-image img{
+    display: block;
+    margin: 0 auto;
+}
+
+
+/**
+ * Mobile Menu
+ *
+ * @author Jason Chafin
+ * 
+ *
+ */
+
+/*customize #sidr ID */
+
+.sidr {
+    width: auto;
+}
+
+.sidr.left {
+    width:auto;
+}
+
+/*hide on desktop*/
+#mobile-menu {
+    display:none;
+
+}
+
+#mobile-menu i {
+    background-color:#CCBA3A;
+    padding: 0 5px;
+    padding: 0 0.5rem;
+}
+
+#mobile-menu .fa {
+    color: #FFF;
+}
+/*display on mobile*/
+@media only screen and (max-width: 767px){
+    #mobile-menu {
+        display: block;
+        position: absolute;
+        position: fixed;
+        top: 0;
+        height: 100%;
+        z-index: 9999;
+    }
+    .nav-primary {
+        display:none;
+    }
+}
+
+h1.tagline{
+    text-align:center;
+    margin-top:10px;
+
+}
+
+/**
+ * Top Button
+ *
+ * @author Jason Chafin
+ * 
+ *
+ */
+
+.topbutton {
+    height:50px;
+    width:50px;
+    position:fixed;
+    right:15px;
+    bottom:30px;
+    z-index:99999;
+    background-repeat:no-repeat;
+    display:none;
+}
+
+.topbutton .fa {
+    color: #FFF;
+    background-color: #CCBA3A;
+    padding: 0 5px 5px;
+}
+
+/*
+Footer Menu
+*/
+
+ul#menu-footer-links.menu {
+    padding:0;
+    margin: 0 0 10px;
+    list-style:none;
+}
+
+ul#menu-footer-links.menu li {
+    display:inline;
+    border-bottom:none;
+    margin-bottom:0;
+    padding-bottom: 0;
+    /*border-left:1px solid #555;*/
+}
+
+ul#menu-footer-links.menu li:first-child::before {
+    content:none;
+}
+
+ul#menu-footer-links.menu li::before {
+    content: ' | ';
+    margin:0 .2em;
+}
+
+/*
+Project/Portfolio Header Custom
+*/
+
+.post-type-archive-project article h2, .tax-project_type article h2 {
+    text-align: center;
+}
+
+.post-type-archive-project article h2 a, .tax-project_type article h2 a {
+    font-size: 24px;
+    font-size: 2.4rem;
+}
+
+/* Blog Meta
+-------------------------------------------------------------*/
+.entry-header .entry-meta .fa{
+    padding-right:5px;
+}
+
+.entry-header .entry-meta span{
+    padding-right:8px;
+}
+
+
+
+/* Front/Home Page
+------------------------------------------------------------ */
+
+#home {
+    min-height:572px;
+
+}
+
+#home-left {
+    float:left;
+    min-width: 417px;
+    padding: 9px;
+    background-color: #ED1C24;
+
+
+}
+
+#home-rotator{
+    background: #fff;
+    border-bottom: 3px solid #242020;
+    padding: 0px 40px;
+}
+
+#home-large-image{
+    width: 400px;
+    
+}
+
+#slideshow-3 .widgettitle h4{
+    display: none;
+}
+
+#home-right {
+    float:right;
+    width: 492px;
+    color: #444;
+
+}
+
+#home-copy {
+
+}
+
+#home-copy p {
+    color: #444;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 18px;
+    margin: 10px 0 0 15px;
+}
+
+#home-below-copy {
+    margin: 10px 0 0 15px;
+}
+.contact-button{
+    width: 100px;
+    height: 30px;
+    margin:0 0 0 135px;
+}
+
+/*copied from Bill Erickson's CSS*/
+.home-services {
+    background: url(images/divider-2.png) repeat-y center top;
+    /* border-bottom: 1px solid #eaeaea; */
+    overflow: hidden;
+    width: 100%;
+}
+
+.home-services .service {
+    padding-bottom: 5px;
+    width: 50%;
+    float: left;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 40px;
+    height: 150px;
+    overflow: hidden;
+}
+
+/* .home-services .service .icon {
+        display: block;
+        margin: 0 auto 30px;
+} */
+
+.home-services .service h3 {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 24px;
+}
+
+.home-services .service .desc {
+    color: #808286;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.home-services .service .button-area {
+    display: none;
+}
+
+.home .service-webdev .icon {
+    background: url(images/icon-design-large.png) no-repeat center top;
+    width: 69px;
+    height: 68px;
+}
+
+.home .service-design .icon {
+    background: url(images/icon-mobile-large.png) no-repeat center top;
+    width: 62px;
+    height: 79px;
+}
+
+.home .service-critique .icon {
+    background: url(images/icon-full-large.png) no-repeat center top;
+    width: 72px;
+    height: 71px;
+}
+
+.home .service-marketing .icon {
+    background: url(images/icon-commercial-large.png) no-repeat center top;
+    width: 79px;
+    height: 73px;
+}
+
+.home .divider {
+    border-top: 1px solid #ED1C24;
+    height: 1px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.home-services .service:hover {
+    background: #ED1C24/*#4884b3*/;
+    padding-bottom: 0;
+    border-bottom: 5px solid #242020;/*#4177a1;*/
+}
+
+.home-services .service:hover h3 {
+    color: #fff;
+    text-shadow: -1px -1px #356083;
+}
+
+.home-services .service:hover .desc {
+    display: none;
+}
+
+.home-services .service:hover .button-area {
+    display: block;
+}
+
+.home .service-design:hover .icon {
+    background: url(images/icon-design-large.png) no-repeat center bottom;
+}
+
+.home .service-mobile:hover .icon {
+    background: url(images/icon-mobile-large.png) no-repeat center bottom;
+}
+
+.home .service-full:hover .icon {
+    background: url(images/icon-full-large.png) no-repeat center bottom;
+}
+
+.home .service-commercial:hover .icon {
+    background: url(images/icon-commercial-large.png) no-repeat center bottom;
+}
+
+.home .all-services {
+    display: block;
+    margin: 1px 0;
+    background: #f4f4f4;
+    color: #000;
+    font-family: 'Droid Serif', serif;
+    font-size: 24px;
+    line-height: 28px;
+    font-style: italic;
+    padding: 44px 0;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 1px #fff;
+}
+
+.home .all-services:hover {
+    text-decoration: underline;
+}
+
+.home .all-services .arrow {
+    display: inline-block;
+    text-indent: -9999em;
+    background: url(images/home-arrow.png) no-repeat;
+    width: 11px;
+    height: 17px;
+}
+
+/* Services
+NOTE:LOTS OF THIS CODE IS OLD. NEEDS CLEANING.
+------------------------------------------------------------ */
+/*adjust breadcrumbs for certain pages*/
+.email-marketing-page .breadcrumb {
+    /*width:90%;
+    float:left;*/
+}
+
+/*Services Dropdown Menu*/
+
+.services-dropbtn {
+    background-color: #CCBA3A/*#CCBA3A/*#B2B216*/;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+/*    margin: -10px 0 30px;*/
+    
+}
+
+.services-dropbtn:hover, .services-dropbtn:focus {
+    background-color: #CCBA3A/*#B2B216*/;
+}
+
+.post-type-archive-project .services-dropdown, .tax-project_type .services-dropdown, .blackbird-services-page .services-dropdown {
+    margin-top:-85px;
+    margin-top:-8.5rem;
+}
+
+.services-dropdown {
+    
+    position: relative;
+    display: inline-block;
+    float:right;
+    padding-right:1%;
+    z-index: 9999;
+}
+
+.services-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.services-dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size:14px;
+    font-size:1.4rem;
+    padding-left:15px;
+    padding-left:1.5rem;
+    text-indent: -24px;
+    text-indent: -2.4rem;
+    margin-left: 30px;
+    margin-left:3.0rem;
+}
+
+.services-dropdown a:hover {background-color: #f1f1f1}
+
+.services-show {display:block;}
+
+/*Services Content*/
+body.services.full-width-content .content {
+    padding-top: 0;
+}
+
+.services-grid {
+    overflow: hidden;
+    width: 100%;
+}
+
+.home-services-head h2 {
+    text-align:center;
+    font-size: 28px;
+    font-size: 2.8rem;
+    padding: 40px 0 0;
+}
+
+
+/*.services-grid a:hover {
+    color: #fff;
+    background-color: #ED1C24;
+    padding-bottom: 25px;
+    border-bottom: 5px solid #242020;
+}*/
+
+.service a:hover {
+
+}
+
+.services-cell {
+    width:33.33333333%;
+    float:left;
+}
+
+.services-cell:hover {
+    color:red;
+}
+
+.services-wrap {
+    width:100%;
+    margin: 0 auto;
+    padding: 50px 0 30px;
+    text-align:center;
+    min-height: 400px;
+}
+
+.services-cell h2 {
+    margin: 10px 0;
+}
+
+
+
+.services-cell ul {
+
+    margin:0 auto;
+    text-align:center;
+    color: #808286;
+
+}
+
+.services-cell ul li {
+    margin:0 auto;
+    text-align:center;
+    list-style-type: none;
+
+}
+
+.services-grid p {
+    color: #808286;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 0 40px;
+    padding:20px 0 20px;
+}
+
+.services-grid .service {
+    /*width: 50%;
+    float: left;
+    padding: 50px 0 30px;
+    height: 250px;*/
+    text-decoration: none;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+.services-grid .service.smaller {
+    height: 300px;
+}
+
+.services-grid .divider {
+    background: url(images/divider-1.jpg) repeat-x left bottom;
+    height: 1px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.services-grid h2 {
+    /*	position: relative;*/
+    /*padding-left: 110px;*/
+}
+
+
+.services-grid .service .button {
+    /*text-align: right;*/
+}
+
+.services-grid .service .button:hover p{
+    font-family: 'Garamond';
+    color:#fcf101;
+}
+
+.services-grid .service h2 {
+    font-size: 26px;
+    line-height: 34px;
+    padding-bottom: 20px;
+    margin: 0 40px;
+    color:#333;
+
+}
+
+
+
+.services-grid .service:hover h2 {
+    color: #fff;
+    text-shadow: -1px -1px #356083;	
+}
+
+.services-grid .service:hover p {
+    color: #fff;
+}
+
+.services-grid .service .icon {
+    width: 102px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.services-grid .service-webdev .icon {
+    background: url(images/icon-design-large.png) no-repeat center top;
+    height: 68px;
+}
+
+.services-grid .service-design .icon {
+    background: url(images/icon-mobile-large.png) no-repeat center top;
+    height: 79px;
+}
+
+.services-grid .service-critique .icon {
+    background: url(images/icon-full-large.png) no-repeat center top;
+    height: 71px;
+}
+
+.services-grid .service-marketing .icon {
+    background: url(images/icon-commercial-large.png) no-repeat center top;
+    height: 73px;
+}
+
+.services-grid .service-webdev:hover .icon {
+    background: url(images/icon-design-large.png) no-repeat center bottom;
+}
+
+.services-grid .service-design:hover .icon {
+    background: url(images/icon-mobile-large.png) no-repeat center bottom;
+}
+
+.services-grid .service-critique:hover .icon {
+    background: url(images/icon-full-large.png) no-repeat center bottom;
+}
+
+.services-grid .service-marketing:hover .icon {
+    background: url(images/icon-commercial-large.png) no-repeat center bottom;
+}
+
+
+body.services .one-half {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+body.services .content-sidebar-wrap,
+.page-template-template-landing-php .content-sidebar-wrap {
+    padding-bottom: 0;
+}
+
+/*services single*/
+.page-child .fa {
+    float:left;
+    margin-right: 15px;
+}
+/*end copied from Bill Erickson's CSS*/
+
+h1.entry-title {
+    text-align: center;
+    border-bottom: 3px solid #242020;
+    padding-bottom: 30px !important;
+}
+
+.menu-social-container {
+    /* background-color: #ED1C24; */
+}
+
+.menu-social-container ul {
+    padding: 0 !important;
+}
+
+.menu-social-container ul li {
+    text-align: center;
+    background-color: #ED1C24;
+    margin: 0 !important;
+    color: #242020 !important;
+}
+
+.menu-social-container ul li:hover {
+    text-align: center;
+    background-color: #242020;
+    color: #ffffff !important;
+}
+
+.menu-social-container ul li:hover a{
+    color: #fff;
+    background-color: #242020;
+}
+
+.menu-social-container ul li a{
+    color: #242020;
+}
+
+/* Custom Font Awesome
+------------------------------------------------------------ */
+.fa {
+    color:#CCBA3A/*#B2B216*/;
+}
+
+.services-dropdown .fa-caret-down {
+    color:#fff;
+}
+
+/* Icon Font Customiizatuon -- service page
+------------------------------------------------------------ */
+
+
+/**
+ * Call to Action
+ *
+ * @author Jason Chafin
+ * 
+ *
+ */
+
+#page-cta {
+    width: 100%;
+    background: #CC302E;
+    /*padding: 20px;*/
+    float: left;
+    color: #fff;
+    margin: 20px 0;
+    border:1px solid #ddd;
+}
+
+#page-cta h4 {
+    color:#fff;
+    margin: 20px 20px 0;
+    border-bottom: 1px solid #fff;
+    /*text-shadow:-1px -1px #356083;*/
+}
+
+#page-cta p {
+    margin: 5px 20px 20px;
+    color:#fff;
+    font-size:15px;
+}
+.page-cta-left, .page-cta-right {
+    width: 50%;
+    float: left;
+}
+
+
+
+a.cta-button {
+    /* float: left; */
+    background: #FFF;
+    display:block;
+    padding: 20px;
+    margin: 40px auto 0;
+    border: .25rem solid #CC302E;
+    border-radius: 1rem;
+    text-align: center;
+    width: 50%;
+    font-size: 18px;
+    font-size:1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+a:hover.cta-button  {
+    background: #CC302E;
+    color: #fff;
+    border-color:#fff;
+}
+
+.page-template-home_page-php a.cta-button {
+
+    margin-top: 40px;
+}
+
+.single-project #page-cta {
+    margin-top:45px;
+}
+
+/* Services -- Child Pages Examples
+------------------------------------------------------------ */
+.service-examples {
+    width:auto;
+    padding-right: 15px;
+    text-align:center;
+    width:100%;
+}
+
+.service-examples ul {
+    list-style-type:none;
+    width:33.3333%;
+    float:left;
+    padding-bottom: 20px;
+    padding-bottom: 2rem;
+}
+
+/**
+ * Pricing Panels
+ *
+ * @author Jason Chafin
+ * 
+ *
+ */
+
+.pricing-row {
+    width:100%;
+    float:left;
+    margin-top: 50px;
+}
+
+.pricing-row .pricing-span {
+    width:31.62393162%; 
+    min-height: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    margin-left: 2.56410256%;
+
+}
+
+.pricing-row [class*=span]:first-child {
+    margin-left:0;
+
+}
+
+.pricing-col {
+    text-align:center;
+    padding:0 0 24px;
+    padding:0 0 2.4rem;
+    margin:0 0 24px;
+    margin:0 0 2.4rem;
+    color:#fff;
+}
+
+.swatch-normal {
+    background-color: #CCBA3A/*#B2B216*/;
+    /*color:#777;*/
+}
+
+.swatch-featured {
+    background-color:#CC302E;
+
+}
+
+.pricing-featured .pricing-head {
+    padding:24px;
+}
+
+.pricing-featured {
+    position:relative;
+    padding-bottom:32px;
+    top:-16px;
+}
+
+.pricing-head {
+    font-size:20px;
+    font-size:2rem;
+    line-height:1em;
+    margin-bottom:0;
+    padding:12px;
+    padding:1.2rem;
+}
+
+.pricing-price {
+    background:rgba(0,0,0,.05);
+    color:#777;
+    color:#fff;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 12px 24px;
+    line-height: 1em;
+    position: relative;
+    text-indent: -16px;
+}
+
+.pricing-price small {
+
+    color:#515151;
+    position:relative;
+    bottom:20px;
+
+}
+
+.pricing-price small, .pricing-price span, .pricing-description {
+
+    font-size:16px;
+    font-size:1.6rem;
+    font-weight:700;
+    opacity:.5;
+
+}
+
+.pricing-description {
+    margin-bottom: 0!important;
+}
+
+.pricing-price span {
+    text-indent:0;
+    display:block;
+    line-height:1em;    
+}
+
+.pricing-list, .pricing-col ul {
+    list-style-type:none;
+    margin:0 0 24px;
+    margin:0 0 2.4rem;
+    text-align:center;
+    background:rgba(0,0,0,.05);
+
+}
+
+.pricing-list li, .pricing-col ul li {
+    border-color:rgba (0,0,0,.05);
+    padding:12px!important;
+    padding:1.2rem!important;
+    margin:0!important;
+    border-bottom:1px solid;
+    line-height:24px;
+    list-style-type:none!important;
+    font-size:18px;
+    font-size:1.8rem;
+}
+
+/**
+ * Web Hosting Page
+ *
+ * Classes for web hosting page customization
+ */
+
+/*body class*/
+.web-hosting-page {
+
+}
+
+.four-reasons {
+
+}
+
+.four-reasons h2 {
+
+}
+
+.four-reasons .center-inline-element, .beyond-basics .center-inline-element {
+    margin: 30px auto;   
+}
+
+/**
+ * Web Maintenance Page
+ *
+ * Classes for web maintenance page customization
+ */
+
+
+.dev-lic {
+    list-style-type: none;
+    width: 100%;
+    margin: 20px 0 0 0;
+    padding: 0;
+    display: block;
+    text-align: center;
+	
+    
+}
+
+.dev-lic:after,
+.dev-lic:before {
+    content: '';
+    display: table;
+}
+
+.dev-lic:after {
+	clear: both;
+}
+
+.dev-lic li {
+    /*width: 175px;*/
+    /*height: 175px;*/
+    display: inline-block;
+    margin: 20px;
+}
+
+.dev-lic-item {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    cursor: default;
+/*    box-shadow: 
+            inset 0 0 0 16px rgba(255,255,255,0.6),
+            0 1px 2px rgba(0,0,0,0.1);*/
+    transition: all 0.4s ease-in-out;
+}
+.dev-lic-item img{
+    /*border-radius: 50%;*/
+}
+
+.dev-lic-item:hover{
+/*    box-shadow: 
+		inset 0 0 0 1px rgba(255,255,255,0.1),
+		0 1px 2px rgba(0,0,0,0.1);*/
+}
+
+.dev-lic-info {
+    position: absolute;
+    top:0;
+    left:0;
+    background: rgba(255,232,73, 0.8);
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    transform: scale(0);
+}
+
+.dev-lic-item:hover .dev-lic-info {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.dev-lic-info p {
+    color: #fff;
+    
+    font-size: 18px;
+    font-size: 1.8rem;
+/*    border-top: 1px solid rgba(255,255,255,0.5);*/
+    opacity: 0;
+    transition: all 1s ease-in-out 0.4s;
+}
+
+.dev-lic-title {
+    font-weight: 700;
+    padding: 60px 0px 0px;
+    margin: 0px;
+}
+
+.dev-lic-value {
+    font-weight: 400;
+    font-style:italic;
+    padding:0;
+    margin: 0;
+}
+
+.dev-lic-item:hover, .dev-lic-info p {
+    opacity:1;
+}
+
+.meet-team {
+    
+}
+
+a.meet-team {
+    /*float:right;*/
+    background: #A5CE3A;
+    display:block;
+    padding:10px;
+    /*margin-top: .25rem;*/
+    /*margin-right: 1rem*/
+    text-align: center;
+    margin: .25rem auto 0;
+    width: 200px;
+    
+    color: #fff;
+}
+a:hover.meet-team {
+    background: #F5821F;
+    color: #fff;
+}
+
+.meet-team p {
+    text-align: center !important;
+}
+
+
+/**
+ * Post Info and Meta
+ *
+ * @author Jason Chafin
+ * 
+ *
+ */
+
+/**
+ * Code Single
+ */
+.single-code .entry-header ul {
+    list-style-type:none;
+}
+
+.single-code .entry-tags {
+    background:none;
+    margin:0;
+    padding:0;
+}
+
+/**
+ * Project Archives
+ *
+ * @author Jason Chafin
+ * 
+ *
+ */
+
+.post-type-archive-project .entry-content, .tax-project_type .entry-content {
+    text-align: center;
+}
+
+/**
+ * Recent Posts Shortcode
+ *
+ * @author Jason Chafin
+ * 
+ *
+ */
+
+.related-posts-shortcode {
+   width:100%;
+    padding: 1em 0;
+    margin: 1em 0;
+    position: relative;
+    clear: both
+}
+
+.related-posts-shortcode h2{
+    margin:0 0 1em;
+    display:inline-block;
+    float:left;
+    font-family:inherit;
+    font-size:18px;
+}
+
+.related-posts-shortcode h2 em:before{
+    content:"";
+    display:block;
+    width:100%;
+    min-width:30px;
+    border-top:1px solid #ddd;
+    border-top:1px solid rgba(0,0,0,.2);
+    margin-bottom: 1em;
+}
+
+.related-posts-shortcode h2 em{
+    font-style:normal;
+    font-weight:700;
+    
+}
+
+.related-posts-shortcode ul li{
+   list-style-type: none;
+   margin:0;
+   padding:0 0 10px 10px;
+   padding:0 0 1.0rem 1.0rem;
+   float:left;
+   width:32.48259%;
+}
+
+.related-posts-shortcode ul li:first-child{
+   clear:both;
+   padding-left: 0;
+}
+
+.related-posts-shortcode ul li a {
+    font-size:18px;
+    font-size:1.8rem;
+    line-height:1;
+}
+
+.related-posts-shortcode p{
+    margin:0;
+}
+
+
+/**
+ * Media Queries
+ *
+ * @author Jason Chafin
+ * 
+ *
+ */
+
+
+@media only screen and (max-width: 768px){
+    
+         .post-type-archive-project .services-dropdown, .tax-project_type .services-dropdown, .blackbird-services-page .services-dropdown {
+    width: 65%;
+    margin:auto;
+}
+.content {
+    padding-top:10px;
+    padding-top:1rem;
+}
+    #title-area {
+        display:none;
+    }
+
+    #title-area-mobile {
+        display:block;
+    }
+
+    .below-slider .widget {
+
+        width:100%;
+    }
+
+    .page-cta-left, .page-cta-right {
+        width:100%;
+    }
+
+    #page-cta h4 {
+        text-align:center;
+    }
+
+    #page-cta p {
+        display:none;
+    }
+
+    a.cta-button {
+        margin-bottom: 40px;
+    }
+
+    #block-title h1 span {
+        font-size:28px;
+    }
+
+    #h2, h2 a, h2 a:visited {
+        font-size:20px;
+    }
+
+
+}
+
+@media only screen and (max-width: 640px){
+    .services-cell, .pricing-row .pricing-span {
+        width: 100%;
+    }
+    
+    .one-half, .one-third {
+        width:100%;
+    }
+      
+    
+}
+
+@media only screen and (max-width: 600px){
+    .beyond-basics .one-third {
+        width:100%;
+    }
+   .website-benefits .one-half {
+        width:100%;
+    }
+    .service-examples ul {
+        width:49%;
+    }
+    
+}
+
+@media only screen and (max-width: 414px){
+    
+    .post-type-archive-project .services-dropdown, .tax-project_type .services-dropdown, .blackbird-services-page .services-dropdown {
+    width: 72%;
+    margin:auto;
+}
+    .entry-content {
+        margin:80px 20px 0;
+    }
+    
+    p {
+        font-size:2rem;
+    }
+    
+    .service-examples ul {
+        width:100%;
+    }
+    
+    .post-type-archive-project .one-third {
+        width: 100%;
+    }
+    
+    
+   
+    
+}
+
+
