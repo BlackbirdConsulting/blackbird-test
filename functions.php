@@ -47,10 +47,4 @@ include_once( CHILD_DIR . '/lib/functions/enqueue-scripts.php' );
 // Shortcodes
 //include_once( CHILD_DIR . '/lib/functions/shortcodes.php' );
 
-// WooCommerce Custom
-//include_once( CHILD_DIR . '/lib/functions/woocustom.php' );
-
-// Bootstrap
-//include_once( CHILD_DIR . '/lib/functions/bootstrap.php' );
-
 /** End Core Functionality Library */
