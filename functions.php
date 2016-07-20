@@ -1,6 +1,6 @@
 <?php
 /**
- * Backbird Twenty Sixteen functions and definitions
+ * Backbird WordPress Starter Theme Functions and Declarations
  *
  * Set up the theme and provides some helper functions, which are used in the
  * theme as custom template tags. Others are attached to action and filter
@@ -30,7 +30,7 @@
 define( 'CHILD_DIR', dirname( __FILE__ ) );
  
 // General Functions
-include_once( CHILD_DIR . '/lib/functions/general.php' );
+//include_once( CHILD_DIR . '/lib/functions/general.php' );
 
 // Post Types
 //include_once( CHILD_DIR . '/lib/functions/post-types.php' );
