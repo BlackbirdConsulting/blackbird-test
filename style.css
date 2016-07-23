@@ -1,16 +1,16 @@
 /* # Blackbird WordPress Starter Child Theme  
-Theme Name: Blackbird WordPress Starter Child Theme [CHANGE THIS TO THE NAME OF YOUR CHILD THEME]
+Theme Name: Blackbird WordPress Twenty Sixteen Child Theme [CHANGE THIS TO THE NAME OF YOUR CHILD THEME]
 Theme URI: https://herm71@bitbucket.org/herm71/blackbird-twentysixteen-child.git
-Description: Blackbird WordPress Starter Child Theme.
+Description: Blackbird WordPress Twenty Sixteen Child Theme.
 Version: 0.0.0 [INCREMENT THIS TO TRIGGER GITHUB UPDATER]
 Author: Blackbird Consulting
 Author URI: http://www.blackbirdconsult.com/  
-Template: [ENTER PARENT TEMPLATE NAME]
-Template Version: [ENTER PARENT TEMPLATE NAME EG. 0.0.0]
+Template: twentysixteen
+Template Version: 0.0.0
 GitHub Theme URI: [ENTER URI OF GITHUB, BITBUCKET OR GITLAB THEME URI]
 GitHub Branch: master
 Tags: black, blue, gray, red, white, yellow, dark, light, one-column, two-columns, right-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready 
-Text Domain:  [enter parenttheme]-child
+Text Domain:  twentysixteen-child
 License: GPL-2.0+  
 License URI: http://www.gnu.org/licenses/gpl-2.0.html  
 */
